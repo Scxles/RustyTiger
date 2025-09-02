@@ -1,0 +1,56 @@
+{
+  "Chat Prefix": "<color=#d97706>Tiger Bot </color>",
+  "Bot Icon (SteamID)": 0,
+  "Cooldown Between Auto Responses For User": "10s",
+  "Global Cooldown Between Auto Responses": "2s",
+  "Use Default Chat (0), Chat Plus (1), Better Chat (2)": 0,
+  "Debug": false,
+  "Allow Multiple Auto Responses": false,
+  "Minimal Time Between Message And Answer": 1,
+  "Maximal Time Between Message And Answer": 5,
+  "Joining Message": [
+    "Welcome to Rusty Tiger, {name}!",
+  ],
+  "Leaving Message": [
+    "Bye, {name} ({id}, {ip})!\nReason: {reason}",
+    "{name} ({id}, {ip}) left the game. Reason: {reason}",
+    "{name} from {country} ({countrycode}) just left the game!"
+  ],
+  "Joining Message Enabled": true,
+  "Leaving Message Enabled": false,
+  "Auto Messages": [
+    {
+      "Permission": "smartchatbot.messages",
+      "Message Frequency": "120m",
+      "Auto Messages": [
+        {
+          "Is Enabled": false,
+          "Message": "Don't forget to join the Rusty Tiger Discord for giveaways, updates, and more.\nhttps://discord.gg/hgz9ZGd5xU"
+        }
+      ]
+    }
+  ],
+  "Auto Responses": [
+    {
+      "Permission": "smartchatbot.response",
+      "Auto Responses": [
+        {
+          "Is Enabled": true,
+          "Remove Message From Sender": false,
+          "Send Response For Everyone (true) or Only For Sender (false)": true,
+          "Triggers": [
+            {
+              "Percentage Of Contained Words": 0.75,
+              "Regex Enabled": false,
+              "Words": [
+                "!pop"              ]
+            }
+          ],
+          "Answers": [
+            "There are currently <color=#d97706>{server.players}</color> players online."
+          ]
+        }
+      ]
+    }
+  ]
+}
